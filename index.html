@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Courses</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="./css/font-awsome.min.css"/>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</head>
+<body  class="bg-light">   
+    <nav class="navbar bg-secondary">
+        <div class="container-lg">
+          <a class="navbar-brand text-danger fw-bold fs-2" href="#">Ganesh Training</a>
+         
+          <div class="col-md-3 d-flex">
+            <p class="navbar-brand text-danger  fs-4">Nunna ManiGanesh</p>                
+            <button type="logout" class="icon fs-6 bg-secondary text-danger me-3"><i class="fas fa-sign-out-alt"></i></button>               
+          
+          <div class="dropdown">
+            <button class="btn btn-danger fs-4" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+             <i class="fas fa-bars"></i>
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
+              <li><a class="dropdown-item" href="#login">login</a></li>
+              <li><a class="dropdown-item" href="#dashBoard">dashBoard</a></li>
+              <li><a class="dropdown-item" href="#courses">courses</a></li>
+              <li><a class="dropdown-item" href="#contentVideo">contentVideo</a></li>
+              <li><a class="dropdown-item" href="#contentTask">contentTask</a></li>
+            </ul>
+          </div>
+          </div>       
+        </div>
+    </nav>
+    <section class="login bg-white py-5" id="login">
+        <div class="container-lg py-5">                     
+          <div class="row justify-content-center py-5" >
+            <div class="col-lg-8 col-xl-5 py-5">
+                <div class="contact-form">
+                    <form>
+                      <div class="row ">
+                        <div class="col-lg-12 d-flex  mb-4"> 
+                            <div class="icon fs-3 text-danger">
+                                <i class="fas fa-phone"></i>
+                            </div>                                                      
+                          <input type="text" placeholder="Enter Phone no /Email Id" class="form-control form-control-lg fs-6 ms-3 border-0 shadow-sm" required>
+                        </div>                        
+                      </div>
+                      <div class="row">
+                        <div class="col-lg-12 d-flex mb-5">
+                            <div class="icon fs-3 text-danger">
+                                <i class="fas fa-unlock-alt"></i>
+                            </div>
+                          <input type="password" placeholder="Enter Password " class="form-control form-control-lg fs-6 ms-3 border-0 shadow-sm" required>
+                        </div>
+                      </div>
+                      
+                      <div class="row">
+                        <div class="col-lg-8">                            
+                          <button type="submit" href="#course" class="btn btn-danger px-5">Login</button>
+                        </div>
+                        <div class="col-lg-4">
+                            <a class="text-danger fs-6 fw-bold" href="#">forget Password</a>
+                        </div>      
+                      </div>
+                    </form>
+                  </div>                
+          </div>
+        </div>
+        </div>
+    </section>
+
+   
+    <section class="dashBoard bg-white py-5" id="dashBoard">
+        <div class="container-lg py-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="section-title text-center">
+                    <h2 class="fw-bold mb-5">Dash Board</h2>
+                  </div>
+                </div>
+              </div>         
+          <div class="row py-3">
+            <div class="col-md-6 col-lg-3">
+              <div class="portfolio item">
+                <button class="html"><img src="./images/html.jpg" class="img-thumbnail" alt="portfolio item"></button>
+              <h3 class="team-capitalize fs-5 text-secondary my-1">HTML</h3>                  
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="portfolio item">
+                <button class="css"><img src="./images/css.jpg" class="img-thumbnail" alt="portfolio item"></button>
+              <h3 class="team-capitalize fs-5 text-secondary my-2">CSS</h3>                  
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="portfolio item">
+                <button class="javascript"><img src="./images/javascript.jpg" class="img-thumbnail" alt="portfolio item"></button>
+              <h3 class="team-capitalize fs-5 text-secondary my-2">JavaScript</h3>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="portfolio item">
+                  <button class="jquery"><img src="./images/jquery.jpg" class="img-thumbnail" alt="portfolio item"></button>
+                <h3 class="team-capitalize fs-5 text-secondary my-2">JQuery</h3>
+                </div>
+              </div>
+          </div>
+          <div class="row py-4">
+            <div class="col-md-6 col-lg-3">
+              <div class="portfolio item">
+                <button class="bootstrap"><img src="./images/bootstrap.jpg" class="img-thumbnail" alt="portfolio item"></button>
+              <h3 class="team-capitalize fs-5 text-secondary my-2">BootStrap</h3>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="portfolio item">
+                <button class="typescript"><img src="./images/typescript.jpg" class="img-thumbnail" alt="portfolio item"></button>
+              <h3 class="team-capitalize fs-5 text-secondary my-2">TypeScript</h3>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="portfolio item">
+                <button class="react"><img src="./images/react.jpg" class="img-thumbnail" alt="portfolio item"></button>
+              <h3 class="team-capitalize fs-5 text-secondary my-2">React</h3>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="portfolio item">
+                  <button class="angular"><img src="./images/angular.jpg" class="img-thumbnail" alt="portfolio item"></button>
+                <h3 class="team-capitalize fs-5 text-secondary my-2">Angular</h3>
+                </div>
+              </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-3">
+              <div class="portfolio item">
+                <button class="vue"><img src="./images/vue.jpg" class="img-thumbnail" alt="portfolio item"></button>
+              <h3 class="team-capitalize fs-5 text-secondary my-2">Vue</h3>
+              </div>
+            </div>            
+          </div>
+        </div>      
+    </section>
+
+    <section class="courses py-5" id="courses">
+        <div class="container-lg py-5">             
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="section-title text-center">
+                    <h2 class="fw-bold mb-5">Courses</h2>
+                  </div>
+                </div>
+              </div>           
+          <div class="row fs-4">
+            <div class="col-md-2 " >
+              <div class="contact-item mb-5">
+                <div class="row">
+                  <button class="html bg-secondary text-danger" href="#html">HTML</button>
+                </div>
+                <div class="row">
+                  <button class="css bg-success text-danger" href="#css">CSS</button>
+                </div>
+                <div class="row">
+                  <button class="javascript bg-secondary text-danger" href="#javascript">JavaScript</button>
+                </div>
+                <div class="row">
+                  <button class="jquery bg-secondary text-danger" href="#jquery">Jquery</button>
+                </div>
+                <div class="row">
+                  <button class="bootstrap bg-secondary text-danger" href="#bootstrap">BootStrap</button>
+                </div>
+                <div class="row">
+                  <button class="typescript bg-secondary text-danger" href="#typescript">TypeScript</button>
+                </div>
+                <div class="row">
+                  <button class="react bg-secondary text-danger" href="#react">React</button>
+                </div>
+                <div class="row">
+                  <button class="angular bg-secondary text-danger" href="#angular">Angular</button>
+                </div>
+                <div class="row">
+                  <button class="vue bg-secondary text-danger" href="#vue">Vue</button>
+                </div>
+              </div>
+
+            </div>
+            <div class="col-md-10 py-5">
+              <div class="contact-form">                  
+                  <div class="row fs-1  px-5 py-2">
+                    <div class="col-lg-4 mb-4">
+                      <div class="row px-3">
+                        <button class="text-success">Background</button>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 mb-2">
+                      <div class="row px-3">
+                        <button class="text-success">Selectors</button>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                      <div class="row px-3">
+                        <button class="text-success">Flex</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row fs-1 px-5 py-4">
+                    <div class="col-lg-4 mb-4">
+                      <div class="row px-3">
+                        <button class="text-success">Tropography</button>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                      <div class="row px-3">
+                        <button class="text-success">Animations</button>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                      <div class="row px-3">
+                        <button class="text-success">Grid</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row fs-1 px-5 ">
+                    <div class="col-lg-4 mb-4">
+                      <div class="row px-3">
+                        <button class="text-success">Colors</button>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                      <div class="row px-3">
+                        <button class="text-success">Box Model</button>
+                      </div>
+                    </div>
+                    <div class="col-lg-4 mb-4">
+                      <div class="row px-3">
+                        <button class="text-success">Transition</button>
+                      </div>
+                    </div>
+                  </div>                 
+                </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="contentVideo py-5" id="contentVideo">
+        <div class="container-lg py-5">  
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="section-title text-center">
+                    <h2 class="fw-bold mb-5">Content Video</h2>
+                  </div>
+                </div>
+              </div>          
+          <div class="row fs-4">
+            <div class="col-md-2 " >
+              <div class="contact-item mb-5">
+                <div class="row">
+                  <button class="html bg-secondary text-danger" href="#html">HTML</button>
+                </div>
+                <div class="row">
+                  <button class="css bg-success text-danger" href="#css">CSS</button>
+                </div>
+                <div class="row">
+                  <button class="javascript bg-secondary text-danger" href="#javascript">JavaScript</button>
+                </div>
+                <div class="row">
+                  <button class="jquery bg-secondary text-danger" href="#jquery">Jquery</button>
+                </div>
+                <div class="row">
+                  <button class="bootstrap bg-secondary text-danger" href="#bootstrap">BootStrap</button>
+                </div>
+                <div class="row">
+                  <button class="typescript bg-secondary text-danger" href="#typescript">TypeScript</button>
+                </div>
+                <div class="row">
+                  <button class="react bg-secondary text-danger" href="#react">React</button>
+                </div>
+                <div class="row">
+                  <button class="angular bg-secondary text-danger" href="#angular">Angular</button>
+                </div>
+                <div class="row">
+                  <button class="vue bg-secondary text-danger" href="#vue">Vue</button>
+                </div>
+              </div>  
+            </div>
+            <div class="col-md-10 py-1">                 
+                <div class="container-lg bg-secondary mb-3 px-5">
+                    <div class="row">
+                      <div class="col-md-10">
+                          <div class="text-white d-flex fw-bold">
+                              <p>Topic:</p>
+                              <div class="dropdown fw-bold">
+                                  <a class="btn btn-secondary  bg-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Background
+                                  </a>                          
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Selectors</a></li>
+                                    <li><a class="dropdown-item" href="#">Flex</a></li>
+                                    <li><a class="dropdown-item" href="#">Tropography</a></li>
+                                    <li><a class="dropdown-item" href="#">Animations</a></li>
+                                    <li><a class="dropdown-item" href="#">Grid</a></li>
+                                    <li><a class="dropdown-item" href="#">Colors</a></li>
+                                    <li><a class="dropdown-item" href="#">Box Model</a></li>
+                                    <li><a class="dropdown-item" href="#">Transition</a></li>
+                                  </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex bg-secondary">
+                          <div class="row">
+                              <button class="bg-danger px-4 fw-bold">Tasks</button>
+                            </div>
+                            <div class="row">
+                              <button class="bg-success px-4 fw-bold">Videos</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+              <div class="contact-form">                  
+                  <div class="row  px-5 py-1">
+                    <div class="col-lg-4 mb-3">
+                      <video width="250" controls>
+                          <source src="mov_bbb.mp4" type="video/mp4">
+                          <source src="mov_bbb.ogg" type="video/ogg">
+                          Your browser does not support HTML video.
+                        </video>
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                      <video width="250" controls>
+                          <source src="mov_bbb.mp4" type="video/mp4">
+                          <source src="mov_bbb.ogg" type="video/ogg">
+                          Your browser does not support HTML video.
+                        </video>
+                    </div>
+                    <div class="col-lg-4 mb-3">
+                      <video width="250" controls>
+                          <source src="mov_bbb.mp4" type="video/mp4">
+                          <source src="mov_bbb.ogg" type="video/ogg">
+                          Your browser does not support HTML video.
+                        </video>
+                    </div>                      
+                  </div>
+                  <div class="row  px-5 py-1">
+                      <div class="col-lg-4 mb-3">
+                        <video width="250" controls>
+                            <source src="mov_bbb.mp4" type="video/mp4">
+                            <source src="mov_bbb.ogg" type="video/ogg">
+                            Your browser does not support HTML video.
+                          </video>
+                      </div>
+                      <div class="col-lg-4 mb-3">
+                        <video width="250" controls>
+                            <source src="mov_bbb.mp4" type="video/mp4">
+                            <source src="mov_bbb.ogg" type="video/ogg">
+                            Your browser does not support HTML video.
+                          </video>
+                      </div>
+                      <div class="col-lg-4 mb-3">
+                        <video width="250" controls>
+                            <source src="mov_bbb.mp4" type="video/mp4">
+                            <source src="mov_bbb.ogg" type="video/ogg">
+                            Your browser does not support HTML video.
+                          </video>
+                      </div>                      
+                    </div>                   
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="contentTask py-5" id="contentTask">
+        <div class="container-lg py-5">  
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                  <div class="section-title text-center">
+                    <h2 class="fw-bold mb-5">Content Task</h2>
+                  </div>
+                </div>
+              </div>          
+          <div class="row fs-4">
+            <div class="col-md-2 " >
+              <div class="contact-item mb-5">
+                <div class="row">
+                  <button class="html bg-secondary text-danger" href="#html">HTML</button>
+                </div>
+                <div class="row">
+                  <button class="css bg-success text-danger" href="#css">CSS</button>
+                </div>
+                <div class="row">
+                  <button class="javascript bg-secondary text-danger" href="#javascript">JavaScript</button>
+                </div>
+                <div class="row">
+                  <button class="jquery bg-secondary text-danger" href="#jquery">Jquery</button>
+                </div>
+                <div class="row">
+                  <button class="bootstrap bg-secondary text-danger" href="#bootstrap">BootStrap</button>
+                </div>
+                <div class="row">
+                  <button class="typescript bg-secondary text-danger" href="#typescript">TypeScript</button>
+                </div>
+                <div class="row">
+                  <button class="react bg-secondary text-danger" href="#react">React</button>
+                </div>
+                <div class="row">
+                  <button class="angular bg-secondary text-danger" href="#angular">Angular</button>
+                </div>
+                <div class="row">
+                  <button class="vue bg-secondary text-danger" href="#vue">Vue</button>
+                </div>
+              </div>  
+            </div>
+            <div class="col-md-10 py-1">                 
+                <div class="container-lg bg-secondary mb-3 px-5">
+                    <div class="row">
+                      <div class="col-md-10">
+                          <div class="text-white d-flex fw-bold">
+                              <p>Topic:</p>
+                              <div class="dropdown fw-bold">
+                                  <a class="btn btn-secondary  bg-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Background
+                                  </a>                          
+                                  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                    <li><a class="dropdown-item" href="#">Selectors</a></li>
+                                    <li><a class="dropdown-item" href="#">Flex</a></li>
+                                    <li><a class="dropdown-item" href="#">Tropography</a></li>
+                                    <li><a class="dropdown-item" href="#">Animations</a></li>
+                                    <li><a class="dropdown-item" href="#">Grid</a></li>
+                                    <li><a class="dropdown-item" href="#">Colors</a></li>
+                                    <li><a class="dropdown-item" href="#">Box Model</a></li>
+                                    <li><a class="dropdown-item" href="#">Transition</a></li>
+                                  </ul>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 d-flex bg-secondary">
+                          <div class="row">
+                              <button class="bg-success px-4 fw-bold">Tasks</button>
+                            </div>
+                            <div class="row">
+                              <button class="bg-danger px-4 fw-bold">Videos</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="">
+                  <div class="container-lg bg-success px-5">
+                      <div class="row">
+                        <div class="col-md-9">
+                            <div class="text-white d-flex">
+                                <p>Task:1</p>
+                                
+                              </div>
+                          </div>
+                          <div class="col-md-3 d-flex fs-5 px-0">
+                             <div class="row">
+                                <button class="px-4" href="#">Easy</button>
+                              </div>
+                              <div class="row">
+                                  <button class="px-4" href="#">Medium</button>
+                                </div>
+                              <div class="row">
+                                <button class="px-4" href="#">Hard</button>
+                              </div>
+                          </div>
+                      </div>
+                     <div class="row py-4">
+
+                     </div>
+                      <div class="row py-5 justify-content-center mb-4 px-1 ">
+                          <div class="col-md-8  mb-2">
+                              <button href="" class="btn-danger">Video Referance</button>
+                              <button class="bg-secondary text-white fw-bold">Submit</button>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <nav aria-label="Page navigation example">
+                          <ul class="pagination justify-content-center">
+                            <li class="page-item"><a class="page-link bg-secondary text-white" href="#">Previous</a></li>
+                            <li class="page-item"><a class="page-link bg-success text-white" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link bg-success text-white" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link bg-success text-white" href="#">3</a></li>
+                            <li class="page-item"><a class="page-link bg-success text-white" href="#">4</a></li>
+                            <li class="page-item"><a class="page-link bg-success text-white" href="#">5</a></li>
+                            <li class="page-item"><a class="page-link bg-primary text-white" href="#">6</a></li>
+                            <li class="page-item"><a class="page-link bg-primary text-white" href="#">7</a></li>
+                            <li class="page-item"><a class="page-link bg-primary text-white" href="#">8</a></li>
+                            <li class="page-item"><a class="page-link bg-danger text-white" href="#">9</a></li>
+                            <li class="page-item"><a class="page-link bg-danger text-white" href="#">10</a></li>
+                            <li class="page-item"><a class="page-link bg-secondary text-white" href="#">Next</a></li>
+                          </ul>
+                        </nav>
+                  </div>                    
+                </div>
+            </div>
+
+          </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container-lg">
+          <div class="row">
+            <div class="col-lg-12">
+              <p class="m-0 text-center text-muted">&copy; 2021 All rights reserved. </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+  
+    
+</body>
+</html>
